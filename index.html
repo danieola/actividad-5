@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegación</title>
+    <style>
+        /* Estilos para el menú principal */
+        .menu {
+            background-color: #bbecf8;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        .menu li:hover {
+            background-color: #3f8506;
+        }
+
+        /* Estilos para los submenús */
+        .menu li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f50202;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .menu li:hover ul {
+            display: block;
+        }
+
+        .menu li ul li {
+            width: 100%;
+        }
+
+        .menu li ul li a {
+            padding: 12px;
+            white-space: nowrap;
+        }
+
+        /* Cambiar color de los enlaces al pasar el cursor */
+        .menu a:hover {
+            background-color: #c80606;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav class="menu">
+        <ul>
+            <li><a href="https://danieola.github.io/Actividad4/ ">Inicio</a></li>
+            <li>
+                <a href="#">Servicios</a>
+                <ul>
+                    <li><a href="https://danieola.github.io/actividad-1-2-y-3/">Diseño</a></li>
+                    <li><a href="https://www.google.com/search?sca_esv=690c000121490280&sxsrf=ADLYWIKhn5YONAtB2eHjit0ZzTijPMxFbg:1732219334138&q=shrek&udm=2&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgWizR0-0aFOH11Sb5tlNhdwTBRAFlvB_IDmZx89cGs2t4PjJbKu7YH0Bmb_E_F9p5LyIJbQeyAzIhBavDcmQarkP7lg4VO-fiv3rdCU5WLu51hYTuIyLcRoSR_9Jp7NBriOqLeY3xea5S7cL3HW7BAibo6uRD-LPYIynKwQF6NVn9V4nVO7R0VzCmkhYCp9xqdTeDWA&sa=X&ved=2ahUKEwiSg9bwm-6JAxW-GVkFHbhPBTYQtKgLegQIDxAB&biw=1280&bih=559&dpr=1.5">Consultoría</a></li>
+                    <li><a href="https://www.google.com/search?sca_esv=690c000121490280&sxsrf=ADLYWILb4kgU7M63LkAdrlF4bruXJ16osA:1732219370192&q=flores&udm=2&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgWizR0-0aFOH11Sb5tlNhd7Qv31WAq-g3XdD7m281OKzE3xbU-72YlRB7AxfxYxWjFgU2H-MNB95xBMHdyXpcHO55iv5hHdfYtnu8272pS5ZQe28hLYdqgDCbXRrAJ1wzGcdmazXVCD_yrQkSljHo3TVlPyzb6-TBPhCgv_tFT4sVK1l1QJalQb4_sQCChRwEH5ahsg&sa=X&ved=2ahUKEwjRx-6BnO6JAxWfEVkFHQJSLlkQtKgLegQIChAB&biw=1280&bih=559&dpr=1.5">Desarrollo</a></li>
+                </ul>
+            </li>
+            <li><a href="https://danieola.github.io/Actividad4/ ">Portafolio</a></li>
+            <li><a href="https://danieola.github.io/Actividad4/ ">Contacto</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
